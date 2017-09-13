@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16F43c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YKMarkToastViewController">
+            <connections>
+                <outlet property="containView" destination="f5T-N5-4WB" id="VnD-Xv-lNQ"/>
+                <outlet property="imageView" destination="KJl-Wj-8b8" id="o51-9I-4He"/>
+                <outlet property="markView" destination="FML-Yo-IqS" id="C9N-tt-GAZ"/>
+                <outlet property="markViewTopConstraint" destination="yHu-EZ-hJC" id="unt-Ws-gYT"/>
+                <outlet property="messageLabel" destination="b0C-Td-gEm" id="GDV-Jd-jr2"/>
+                <outlet property="messageLabelBottomConstraint" destination="vRl-Ft-8qg" id="xxr-B5-mNi"/>
+                <outlet property="messageLabelTopConstraint" destination="A4n-Vm-9d4" id="43h-Gl-DDx"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f5T-N5-4WB">
+                    <rect key="frame" x="157.5" y="291" width="60" height="85"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FML-Yo-IqS" customClass="YKMarkAnimationView">
+                            <rect key="frame" x="12.5" y="15" width="35" height="35"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="35" id="Vqj-3J-xDX"/>
+                                <constraint firstAttribute="width" secondItem="FML-Yo-IqS" secondAttribute="height" multiplier="1:1" id="z7A-gc-tY8"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b0C-Td-gEm">
+                            <rect key="frame" x="30" y="65" width="0.0" height="0.0"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_failed_warning" translatesAutoresizingMaskIntoConstraints="NO" id="KJl-Wj-8b8">
+                            <rect key="frame" x="12.5" y="15" width="35" height="35"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="KJl-Wj-8b8" firstAttribute="trailing" secondItem="FML-Yo-IqS" secondAttribute="trailing" id="8Vg-WE-RoT"/>
+                        <constraint firstItem="b0C-Td-gEm" firstAttribute="top" secondItem="FML-Yo-IqS" secondAttribute="bottom" constant="15" id="A4n-Vm-9d4"/>
+                        <constraint firstItem="b0C-Td-gEm" firstAttribute="leading" secondItem="f5T-N5-4WB" secondAttribute="leading" constant="30" id="Jxi-4G-js7"/>
+                        <constraint firstItem="FML-Yo-IqS" firstAttribute="centerX" secondItem="f5T-N5-4WB" secondAttribute="centerX" id="NTi-bj-I8E"/>
+                        <constraint firstItem="KJl-Wj-8b8" firstAttribute="bottom" secondItem="FML-Yo-IqS" secondAttribute="bottom" id="QuH-IP-XVv"/>
+                        <constraint firstItem="KJl-Wj-8b8" firstAttribute="leading" secondItem="FML-Yo-IqS" secondAttribute="leading" id="bsa-RU-Nh7"/>
+                        <constraint firstItem="KJl-Wj-8b8" firstAttribute="top" secondItem="FML-Yo-IqS" secondAttribute="top" id="nu8-eX-hqE"/>
+                        <constraint firstAttribute="trailing" secondItem="b0C-Td-gEm" secondAttribute="trailing" constant="30" id="pEX-AG-eUV"/>
+                        <constraint firstAttribute="bottom" secondItem="b0C-Td-gEm" secondAttribute="bottom" constant="20" id="vRl-Ft-8qg"/>
+                        <constraint firstItem="FML-Yo-IqS" firstAttribute="top" secondItem="f5T-N5-4WB" secondAttribute="top" constant="15" id="yHu-EZ-hJC"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="f5T-N5-4WB" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="4wV-rv-5Tq"/>
+                <constraint firstItem="f5T-N5-4WB" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Mti-Bs-qhR"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="f5T-N5-4WB" secondAttribute="trailing" constant="10" id="cVr-MO-7gg"/>
+                <constraint firstItem="f5T-N5-4WB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="p4h-0I-cT8"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_failed_warning" width="40" height="40"/>
+    </resources>
+</document>
