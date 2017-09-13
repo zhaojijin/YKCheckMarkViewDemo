@@ -1,2 +1,2 @@
 # YKCheckMarkViewDemo
-check mark 对勾
+对勾动画CheckMarkAnimation还有对应的失败动画
