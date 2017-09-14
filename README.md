@@ -3,4 +3,4 @@
 
 效果图如下:
 
-![](/Users/zhaojijin/Desktop/MyGitHub/YKCheckMarkViewDemo/03.gif)
+![](https://github.com/zhaojijin/YKCheckMarkViewDemo/blob/master/03.gif)
